@@ -3,6 +3,7 @@ import { handleError } from "./error.js";
 
 export const verifyToken = (req, res, next) => {
   const token = req.cookies.access_token;
+  console.log(req, "hello");
   console.log(token, "1");
   if (!token) {
     console.log(token, "2");
